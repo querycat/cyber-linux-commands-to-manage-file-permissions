@@ -52,7 +52,7 @@ O comando `chmod o-w` remove (`-`) a permissão de gravaçãp (`w`) da categoria
 
 ## Alterar permissões de arquivos ocultos
 
-O arquivo `.project_x.txt` foi arquivado pela equipe de pesquisa, por isso é um arquivo oculto (nomes de arquivos que começam com ponto são ocultos no Linux). Suas permissões originais eram `rw--w----`, ou seja, o usuário podia ler e gravar, e o grupo só podia gravar (sem poder ler), o que não corresponde à política exigida. A política determina que ninguém deve ter permissão de gravação, mas o usuárip e grupo devem poder ler o arquivo. Usei o comando:
+O arquivo `.project_x.txt` foi arquivado pela equipe de pesquisa, por isso é um arquivo oculto (nomes de arquivos que começam com ponto são ocultos no Linux). Suas permissões originais eram `rw--w----`, ou seja, o usuário podia ler e gravar, e o grupo só podia gravar (sem poder ler), o que não corresponde à política exigida. A política determina que ninguém deve ter permissão de gravação, mas o usuário e grupo devem poder ler o arquivo. Usei o comando:
 
 ```bash
 
