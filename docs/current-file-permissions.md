@@ -5,26 +5,26 @@ Este documento exibe a estrutura de arquivos do diretório `/home/researcher2/pr
 No diretório `/home/researcher2/projects`, há cinco arquivos com os seguintes nomes e permissões:
 
 
-● `project_k.txt`
-    ○ Usuário = leitura, escrita
-    ○ Grupo = leitura, escrita
-    ○ Outros = leitura, escrita
-● `project_m.txt`
-    ○ Usuário = leitura, escrita
-    ○ Grupo = leitura
-    ○ Outros = nenhuma
-● `project_r.txt`
-    ○ Usuário = leitura, escrita
-    ○ Grupo = leitura, escrita
-    ○ Outros = leitura
-● `project_t.txt`
-    ○ Usuário = leitura, escrita
-    ○ Grupo = leitura, escrita
-    ○ Outros = leitura
-● `.project_x.txt`
-    ○ Usuário = leitura, escrita
-    ○ Grupo = escrita
-    ○ Outros = nenhuma
+● `project_k.txt` </br>
+    ○ Usuário = leitura, escrita </br>
+    ○ Grupo = leitura, escrita </br>
+    ○ Outros = leitura, escrita </br>
+● `project_m.txt` </br>
+    ○ Usuário = leitura, escrita </br>
+    ○ Grupo = leitura </br>
+    ○ Outros = nenhuma </br>
+● `project_r.txt` </br>
+    ○ Usuário = leitura, escrita </br>
+    ○ Grupo = leitura, escrita </br>
+    ○ Outros = leitura </br>
+● `project_t.txt` </br>
+    ○ Usuário = leitura, escrita </br>
+    ○ Grupo = leitura, escrita </br>
+    ○ Outros = leitura </br>
+● `.project_x.txt` </br>
+    ○ Usuário = leitura, escrita </br>
+    ○ Grupo = escrita </br>
+    ○ Outros = nenhuma </br>
 
 Há também um subdiretório dentro do diretório `projects` chamado `drafts`. As permissões para o `drafts` são:
     ● Usuário = leitura, escrita, execução
