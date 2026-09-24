@@ -6,12 +6,14 @@ Projeto de estudo e portifolio de cibersegurança que simula uma auditoria de pe
 
 ## Estrutura do repositório e ordem de leitura sugerida
 
+```
 ├── README.md
 ├── docs
 │   ├── current-file-permissions.md
 │   └── example-file-permissions-in-linux.md
 └── result
     └── file-permissions-in-linux.md
+```
 
 | Ordem | Arquivo | Propósito |
 |---|---|---|
@@ -29,12 +31,13 @@ Diretório auditado: `/home/researcher2/projects`
 Proprietário de todos os itens: `researcher2`
 
 ## Metodologia
-    1. **Levantamento**: usar `ls -la` para listar todos os itens do diretório, incluindo arquivos ocultos, e registrar a cadeia de permissões de cada um ([`current-file-permissions.md`](docs/current-file-permissions.md)).
-    2. **Interpretação**: decompor cada cadeia de 10 caracteres (tipo do item + permissões de usuário, grupo e outros) para entender o acesso real concedido.
-    3. **Comparação com a política**: confrontar as permissões encontradas com as regras de segurança da organização — nenhuma gravação para "outros", leitura restrita para o arquivo arquivado, e acesso exclusivo do proprietário ao diretório `drafts`.
-    4. **Correção**: aplicar `chmod`, em notação simbólica ou octal conforme o caso, apenas nos itens que divergiam da política, evitando alterar permissões que já estavam corretas.
-    5. **Validação**: reexecutar `ls -la` após cada alteração para confirmar que o resultado corresponde à permissão esperada.
-    6. Documentação: registrar comando, saída e justificativa de cada mudança no relatório final ([`docs/file-permissions-in-linux.md`](result/file-permissions-in-linux.md)).
+
+1. **Levantamento**: usar `ls -la` para listar todos os itens do diretório, incluindo arquivos ocultos, e registrar a cadeia de permissões de cada um ([`current-file-permissions.md`](docs/current-file-permissions.md)).
+2. **Interpretação**: decompor cada cadeia de 10 caracteres (tipo do item + permissões de usuário, grupo e outros) para entender o acesso real concedido.
+3. **Comparação com a política**: confrontar as permissões encontradas com as regras de segurança da organização — nenhuma gravação para "outros", leitura restrita para o arquivo arquivado, e acesso exclusivo do proprietário ao diretório `drafts`.
+4. **Correção**: aplicar `chmod`, em notação simbólica ou octal conforme o caso, apenas nos itens que divergiam da política, evitando alterar permissões que já estavam corretas.
+5. **Validação**: reexecutar `ls -la` após cada alteração para confirmar que o resultado corresponde à permissão esperada.
+6. Documentação: registrar comando, saída e justificativa de cada mudança no relatório final ([`docs/file-permissions-in-linux.md`](result/file-permissions-in-linux.md)).
 
 
 ## Permissões encontradas
@@ -50,9 +53,9 @@ Proprietário de todos os itens: `researcher2`
 
 ## Política de segurança aplicada
 
-    1. Nenhum arquivo pode ter permissão de gravação para "outros".
-    2. O arquivo arquivado `.project_x.txt` deve permitir apenas **leitura** para usuário e grupo, sem gravação para ninguém.
-    3. Apenas o proprietário `researcher2` pode acessar o diretório `drafts` e seu conteúdo.
+1. Nenhum arquivo pode ter permissão de gravação para "outros".
+2. O arquivo arquivado `.project_x.txt` deve permitir apenas **leitura** para usuário e grupo, sem gravação para ninguém.
+3. Apenas o proprietário `researcher2` pode acessar o diretório `drafts` e seu conteúdo.
 
 ``
 ## Comandos usados
